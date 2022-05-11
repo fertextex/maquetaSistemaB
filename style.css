@@ -1,0 +1,264 @@
+
+/*0. RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+  /*----------------- web ----------------*/
+
+  
+  
+
+header {background: url(../imagenes/empresaBlogo.jpg) no-repeat center
+        ;background-size: cover;
+      padding: 300px;}
+        
+      
+    
+   /* ----menu---*/
+
+.navBar{
+    margin: 6px 27px;
+    position: relative;
+    left: 100%;
+    top: 200%;
+    bottom:250px ;
+    size: 20px 20px;
+   
+}
+
+.menu > li > a{
+    color: #9e9d9d;
+}
+.menu li a:hover{
+    color:black;
+    transition: all .3s;
+}
+ .submenu{
+     position: absolute;
+    visibility: hidden;
+    opacity: 0;
+ }
+
+ .submenu li a{
+     display: block;
+     padding: 15px;
+     color: #9e9d9d;
+     text-decoration: none;
+
+ }
+  .menu li:hover .submenu{
+      visibility: visible;
+      opacity: 1;
+  }
+/*---
+  .navegacion{
+      position: sticky;
+      padding-top: 26px;
+      text-align: left;
+      background-color: rgb(190, 184, 184);
+      display: inline-block;
+      transition: padding top .2s ease,
+      height .2s ease;
+      height: 77px;
+      visibility: hidden;
+   
+}
+.navegacion a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 20px 'Stint Ultra Condensed';
+    margin-left: 15px;
+    color: black;
+}
+--*/
+
+ /*---- secion -----*/
+.MovimientoB {
+    background-color: rgb(253, 253, 253);
+    padding: 100px;
+   
+}
+
+.MovimientoB .mapa{
+    position: relative;
+    top:40px;
+    left: 40%;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 40px;
+   
+
+}
+.Beneficios{
+
+    padding: 30px ;
+background-color: #CA373F;
+background-size: cover;
+text-align: left;
+
+}
+
+.Beneficios .boton2{
+    position: relative;
+    left: 45%;
+}
+.logoEmpresaB{
+ 
+    max-width: 300px;
+    max-height: 300px;
+    
+}
+
+
+.boton2{
+    padding:  15px 30px;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 25px;
+    background: none;
+    border: 2px solid rgb(0, 0, 0); 
+    cursor: pointer;
+ 
+    
+}
+    
+.impacto{
+    padding: 100px;
+
+}
+
+.impacto .imagen2{
+    position: relative;
+    top:50px
+}
+ .impacto .boton2{
+     position: relative;
+     top:90px;
+     left: 45%;
+ }
+
+.eventos{
+    padding: 150px;
+    background-color: #9e9d9d;
+}
+
+.eventos .noticia1{
+    position: relative;
+    left: 15%;
+    margin-top: 50px;
+    width: 700px;
+    height: 200px;
+    background-color: #000000;
+    text-align: center;
+   
+}
+
+.eventos .noticia2{
+    position: relative;
+    left: 15%;
+    top: 10px;
+    width: 700px;
+    height: 200px;
+    background-color: #f80909;
+}
+
+.eventos >a{ 
+    font-size: 50px;
+    font-style: none;
+    
+}
+
+.contacto{
+    padding: 100px;
+    background-color: #cac7c7;
+}
+ .contacto .formulario{
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 80px, 80px;
+   
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.contacto .formulario .controls{
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    font-size: 17px;
+    margin-top: 20px;
+}
+.textarea{
+    min-height: 300px;
+}
+.contacto .formulario .boton{
+   margin-left: 43%;
+   border: 2px solid;
+   padding: 10px 20px;
+   border-radius: 15px;
+   color: #000000;
+   cursor: pointer;
+}
+
+button{
+    position: relative;
+    left: 45%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid;
+}
+  
