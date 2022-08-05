@@ -1,164 +1,19 @@
-
-/*0. RESET */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-  /*----------------- web ----------------*/
-
-  
-  
-
-header {background: url(../imagenes/empresaBlogo.jpg) no-repeat center
-        ;background-size: cover;
-      padding: 300px;}
-        
-      
-    
-   /* ----menu---*/
-
-.navBar{
-    margin: 6px 27px;
+/*-----Botones----*/
+button{
     position: relative;
-    left: 100%;
-    top: 200%;
-    bottom:250px ;
-    size: 20px 20px;
-   
-}
-
-.menu > li > a{
-    color: #9e9d9d;
-}
-.menu li a:hover{
-    color:black;
-    transition: all .3s;
-}
- .submenu{
-     position: absolute;
-    visibility: hidden;
-    opacity: 0;
- }
-
- .submenu li a{
-     display: block;
-     padding: 15px;
-     color: #9e9d9d;
-     text-decoration: none;
-
- }
-  .menu li:hover .submenu{
-      visibility: visible;
-      opacity: 1;
-  }
-/*---
-  .navegacion{
-      position: sticky;
-      padding-top: 26px;
-      text-align: left;
-      background-color: rgb(190, 184, 184);
-      display: inline-block;
-      transition: padding top .2s ease,
-      height .2s ease;
-      height: 77px;
-      visibility: hidden;
-   
-}
-.navegacion a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font: 20px 'Stint Ultra Condensed';
-    margin-left: 15px;
-    color: black;
-}
---*/
-
- /*---- secion -----*/
-.MovimientoB {
-    background-color: rgb(253, 253, 253);
-    padding: 100px;
-   
-}
-
-.MovimientoB .mapa{
-    position: relative;
-    top:40px;
-    left: 40%;
-    max-width: 700px;
-    max-height: 700px;
-}
-
-.titulo{
-    text-align: center;
-    font-size: 40px;
-   
-
-}
-.Beneficios{
-
-    padding: 30px ;
-background-color: #CA373F;
-background-size: cover;
-text-align: left;
-
-}
-
-.Beneficios .boton2{
-    position: relative;
-    left: 45%;
-}
-.logoEmpresaB{
- 
-    max-width: 300px;
-    max-height: 300px;
+    left: 43%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid;
     
 }
-
-
 .boton2{
     padding:  15px 30px;
     font-size: 16px;
@@ -167,55 +22,201 @@ text-align: left;
     background: none;
     border: 2px solid rgb(0, 0, 0); 
     cursor: pointer;
- 
-    
+    margin-bottom: 10px;
+    margin-left: 50%;
+ }
+/*--------Titulos y textos------*/
+.titulo{
+    font-family:Helvetica, sans-serif ;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
 }
-    
+p{
+    font-family:'Merriweather', serif; ;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*------- Portada------*/
+
+header nav{
+    margin-bottom: 10px;
+    background-color: #cac7c7;
+   }
+    header nav ul{
+        list-style: none;
+        overflow: hidden;
+
+    }
+
+    header nav ul li{
+        float:left;
+    }
+    header nav ul li a{
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+    }
+    header nav ul li a:hover{
+        background: #9d9e9d;
+    }
+    header nav.logobara{
+        max-width: 10px;
+        max-height: 10px;
+    }
+    .menu-fixed{
+        position: fixed;
+        z-index:1000px ;
+        top:0;
+        width: 100%;
+    }
+   #ConteItemsCarrusel{
+
+    height: 400px;
+    overflow: hidden;
+   }
+   
+   
+   .contenedorCarrusel{
+
+    height: 100%;
+    position: relative;
+   }
+   .imagenCarrusel{
+
+    height: 100%;
+   }
+   .flechasCarrusel{
+    margin: -3px;
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      }
+      .contenedorCarrusel  img{
+        width: 100%;
+        height: 100%;
+      }
+      
+
+/*----- Movimiento B------*/
+.MovimientoB{
+    padding: 100px;
+}
+
+.MovimientoB .mapa{
+    max-width: 900px;
+    max-height: 900px;
+    margin-top: -200px;
+    margin-left: 200px;
+}
+
+.MovimientoB .Contador{
+    margin-top: 150px;
+}
+
+/*------Beneficios-----*/
+.Beneficios{
+    padding: 100px;
+    background-color: #ed6e27;
+}
+
+.Beneficios .logoEmpresaB{
+    max-width: 350px;
+    max-height: 350px;
+
+}
+
+.Beneficios .textoBeneficios{
+    padding: 20px;
+    background-color: #ed6e27;
+    width: 500px;
+    margin-left: 400px;
+    margin-top: -300px;
+}
+/*------Comprenda su Impacto----*/
 .impacto{
     padding: 100px;
-
+    background-color: white;
 }
 
 .impacto .imagen2{
-    position: relative;
-    top:50px
-}
- .impacto .boton2{
-     position: relative;
-     top:90px;
-     left: 45%;
- }
-
-.eventos{
-    padding: 150px;
-    background-color: #9e9d9d;
+    max-width: 500px;
+    max-height: 500px;
 }
 
-.eventos .noticia1{
-    position: relative;
-    left: 15%;
-    margin-top: 50px;
-    width: 700px;
-    height: 200px;
-    background-color: #000000;
-    text-align: center;
-   
+.impacto .textoImpacto{
+    padding: 40px;
+    width: 500px;
+    margin-left: 600px;
+    margin-top: -200px;
 }
-
-.eventos .noticia2{
-    position: relative;
-    left: 15%;
-    top: 10px;
-    width: 700px;
-    height: 200px;
-    background-color: #f80909;
-}
-
-.eventos >a{ 
-    font-size: 50px;
-    font-style: none;
+/*-----Empresas BIC-------*/
+#Bic{
+    height:600px
+    
     
 }
+.Bic{
+    background: url(imagenes/bic.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-color: #9d9e9d;}
+
+.TextoBIC{
+
+    margin: 400px 50px;
+    font-size: italic;  
+    color: #000 ;
+}
+
+
+
+
+/*--------Noticias-----*/
+
+.eventos{
+    background-color:rgb(219, 219, 219);
+    padding: 100px;
+    
+    }
+    .noticia1{
+        width: 300px;
+        margin: 5px 50px;
+        padding: 20px;
+        font-size: italic;  
+        background-color:#cac7c7;
+        color: #000 ;
+    }
+    
+    .noticia2{
+        width: 400px;
+        margin: 10px 500px;
+        padding: 20px;
+        font-size: italic;  
+        background-color: #cac7c7;
+        color: #000 ;
+    }
+    
+    .noticia3{
+        width: 700px;
+        margin: 10px 300px;
+        padding: 20px;
+        font-size: italic;  
+        background-color: #cac7c7;
+        color: #000 ;
+    }
+    
+
+/*--------Contactos----*/
 
 .contacto{
     padding: 100px;
@@ -241,9 +242,10 @@ text-align: left;
     margin-top: 20px;
 }
 .textarea{
-    min-height: 300px;
-    max-height: 500px;
+    min-height: 100px;
+    max-height: 200px;
     max-width: 100%;
+    
 }
 .contacto .formulario .boton{
    margin-left: 43%;
@@ -253,14 +255,3 @@ text-align: left;
    color: #000000;
    cursor: pointer;
 }
-
-button{
-    position: relative;
-    left: 43%;
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    border: 1px solid;
-}
-  
