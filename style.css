@@ -23,7 +23,7 @@ button{
     border: 2px solid rgb(0, 0, 0); 
     cursor: pointer;
     margin-bottom: 10px;
-    margin-left: 50%;
+    margin-left: 45%;
  }
 /*--------Titulos y textos------*/
 .titulo{
@@ -47,6 +47,7 @@ a{
 header nav{
     margin-bottom: 10px;
     background-color: #cac7c7;
+    
    }
     header nav ul{
         list-style: none;
@@ -74,38 +75,41 @@ header nav{
         z-index:1000px ;
         top:0;
         width: 100%;
+        
     }
-   #ConteItemsCarrusel{
-
-    height: 400px;
-    overflow: hidden;
-   }
-   
-   
-   .contenedorCarrusel{
-
-    height: 100%;
-    position: relative;
-   }
-   .imagenCarrusel{
-
-    height: 100%;
-   }
-   .flechasCarrusel{
-    margin: -3px;
-    height: 100%;
-    width: 100%;
-    position: absolute; 
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-      }
-      .contenedorCarrusel  img{
+    .slider{
         width: 100%;
-        height: 100%;
-      }
-      
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    
+    }
+    
+    .slider ul{
+        display: flex;
+        padding: 0;
+        width: 200%;
+        animation: cambio 14s infinite alternate;
+        animation-timing-function: ease-in;
+    
+    }
+    
+    .slider li{
+        width: 100%;
+        list-style: none;
+    }
+    .slider img{
+        width: 100%;
+    }
+    
+    @keyframes cambio {
+        0% {margin-left: 0;}
+        50% {margin-left: 0;}
+    
+        55%{ margin-left: -100%;}
+        100% {margin-left: -100%;}
+    }
+    
 
 /*----- Movimiento B------*/
 .MovimientoB{
@@ -160,22 +164,22 @@ header nav{
     margin-top: -200px;
 }
 /*-----Empresas BIC-------*/
-#Bic{
-    height:600px
-    
-    
-}
+
 .Bic{
+    padding: 100px;
     background: url(imagenes/bic.png);
 background-repeat: no-repeat;
 background-size: contain;
 background-color: #9d9e9d;}
 
-.TextoBIC{
+.Bic .TextoBIC{
+    padding: 60px;
+    margin-top: 350px;
+    color: black;
+}
 
-    margin: 400px 50px;
-    font-size: italic;  
-    color: #000 ;
+.Bic .titulo{
+    margin-top: -50px;
 }
 
 
